@@ -1,0 +1,28 @@
+<div class="content">
+    {{#if foundMovie}}
+    {{#with foundMovie}}
+    <div class="found-movie-info">
+        <img src="{{this.image}}" alt="Movie poster for {{this.title}}">
+        <div class="found-movie-info-text">
+            <a href="/movies">Go back</a>
+            <h1>{{this.title}}</h1>
+            <h2>Director: {{this.director}}</h2>
+            <h3>Stars</h3>
+            {{#each this.stars}}
+
+            <li>{{this}}</li>
+            {{/each}}
+            <p>{{this.description}}</p>
+
+            |{{#each this.showtimes}}
+            {{this}} |
+            {{/each}}
+        </div>
+    </div>
+    {{/with}}
+    {{else}}
+    <p>The movie doesn't exsit, please go back and try again.
+    </p>
+    <p><a href="/movies">Go back</a></p>
+    {{/if}}
+</div>

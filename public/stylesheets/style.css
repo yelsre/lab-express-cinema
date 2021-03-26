@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: teal;
+}
+
+.home-page {
+  background-image: url("../images/cinema.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.home-page > h1 {
+  color: white;
+  font-size: 70px;
+  margin: 20px 20px 20px 60vw;
+}
+
+.home-page > a {
+  background-color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 50rem;
+  margin: 20px 20px 20px 60vw;
+}
+
+.content {
+  padding: 50px;
+  min-height: calc(100vh - 100px);
+}
+
+.content,
+img {
+  box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+}
+
+.movie-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin: 20px;
+}
+
+.movie-list-each {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin: 10px;
+}
+.movie-list-each > * {
+  margin: 5px;
+}
+
+.found-movie-info {
+  display: flex;
+}
+.found-movie-info-text {
+  padding: 20px;
+}
+.found-movie-info-text > * {
+  margin: 5px;
+}

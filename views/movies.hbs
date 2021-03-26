@@ -1,0 +1,20 @@
+<div class="content">
+    <h1>Ironhack cinema</h1>
+    {{#if movieList}}
+    <p>Click on movie to check the showtimes!</p>
+    <div class="movie-list">
+        {{#each movieList}}
+        <div class="movie-list-each">
+            <img src="{{this.image}}" alt="Movie poster for {{this.title}}">
+            <h3>{{this.title}}</h3>
+            <a href="/movie/{{this._id}}">
+                <p>See more</p>
+            </a>
+        </div>
+        {{/each}}
+    </div>
+    {{else}}
+    <p>No movies currently available :(</p>
+    <a href="/">Click here</a>
+    {{/if}}
+</div>
